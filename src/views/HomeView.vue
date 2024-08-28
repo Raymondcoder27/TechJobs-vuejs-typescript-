@@ -21,7 +21,7 @@ const jobs = ref<Job[]>([
 },
 {title: 'Vue JS Frontend Dev',
   location: 'Wakiso',
-  salary: 'USD 6,000',
+  salary: 'USD 5,000',
   id: '2'
 },{title: 'Golang Backend Dev',
   location: 'Nansana',
