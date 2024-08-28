@@ -37,5 +37,10 @@ const changeName = () => {
         @click="changeName">
           Change Name
         </button>
+
+        <div class="w-full text-gray-500 block">
+          <h3>Reactive</h3>
+         Age is {{ state.age }} and  name is {{ state.name }}
+        </div>
     </div>
 </template>
