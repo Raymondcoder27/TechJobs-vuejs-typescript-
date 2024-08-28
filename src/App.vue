@@ -3,6 +3,8 @@ import {ref, type Ref} from "vue";
 import {useRoute} from "vue-router";
 import router from "@/router";
 import Home from "vue-material-design-icons/Home.vue"
+import Job from "./types/Job "
+import { title } from "process";
 
 const route = useRoute()
 
@@ -10,6 +12,23 @@ type SideMenuLink ={
   name:string
   label:string
 }
+
+const jobs = ref<Job[]>([
+  {title: 'CTO',
+  location: 'Kasese',
+  salary: 'USD 10,000',
+  id: '1'
+},
+{title: 'Vue JS Frontend Dev',
+  location: 'Wakiso',
+  salary: 'USD 6,000',
+  id: '2'
+},{title: 'Golang Backend Dev',
+  location: 'Nansana',
+  salary: 'USD 6,000',
+  id: '3'
+},
+])
 
 const sideMenu:Ref<Array<SideMenuLink>> = ref([
   {
