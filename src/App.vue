@@ -17,13 +17,13 @@ type SideMenuLink = {
 
 const sideMenu: Ref<Array<SideMenuLink>> = ref([
   {
-    name: "home",
-    label: "Home",
+    name: "jobs",
+    label: "Jobs",
     // icon: "icon"
   },
   {
-    name: "about",
-    label: "About",
+    name: "apply",
+    label: "Apply",
     // icon: "icon"
   },
 ]);
@@ -44,11 +44,11 @@ function navigate(routeName: string) {
     <!-- <div class="wrapper"> -->
       <div class="w-full bg-black py-7 text-center flex justify-center items-center top-0 fixed">
   <div class="absolute left-0 right-0 flex justify-center text-white font-bold">
-    <h3>TECH JOBS</h3>
+    <h3>TECHWORK</h3>
   </div>
 
-  <div class="text-black bg-gray-100 mr-3 rounded-md p-1 absolute right-0">
-    <h3 class="text-gray-500 font-semibold">Welcome, {{ name }}, {{ age }}</h3>
+  <div class="bg-gray-100 mr-3 rounded-md p-1 absolute right-0">
+    <h3 class="text-gray-500 font-mono  text-sm font-semibold">{{ name }}, {{ age }}</h3>
   </div>
 </div>
 
@@ -63,10 +63,7 @@ function navigate(routeName: string) {
         <label class="cursor-pointer">{{ item.label }}</label>
       </div>
     </nav>
-    <!-- </div> -->
-    <div class="flex w-full text-gray-600 font-semibold">
-      <!-- <h2>{{  }}</h2> -->
-    </div>
+
   </header>
 
   <RouterView />
