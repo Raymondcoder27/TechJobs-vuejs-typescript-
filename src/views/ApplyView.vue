@@ -1,6 +1,6 @@
 <template>
   <div class="flex font-bold text-gray-500 justify-center">
-    <h1>Apply Today </h1>
+    <h1>Applications closed at the moment. </h1>
   </div>
 </template>
 
