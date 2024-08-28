@@ -22,7 +22,7 @@ import type OrderTerm from '@/types/OrderTerm';
 
 <template>
     <div>
-        <ul>
+        <transition-group tag="ul" name="list">
            ordered by {{ order }}
             <li class="bg-blue-950 text-white font-semibold rounded-md mx-auto w-[600px] py-2 my-5" v-for="job in orderedJobs" :key="job.id">
                 <h2>{{ job.title }} in {{ job.location }}</h2>
@@ -31,11 +31,13 @@ import type OrderTerm from '@/types/OrderTerm';
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto velit in eaque!</p>
             </div>
             </li>
-        </ul>
+        </transition-group>
     </div>
     <!-- {{ jobs  }} -->
 </template>
 
 <style scoped>
-
+    .list-move{
+        transition: all 1s
+    }
 </style>

@@ -16,7 +16,7 @@ const handleClick = (term: OrderTerm) =>{
 const jobs = ref<Job[]>([
   {title: 'CTO',
   location: 'Kasese',
-  salary: 'USD 10,000',
+  salary: 'USD 8,000',
   id: '1'
 },
 {title: 'Vue JS Frontend Dev',
