@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {reactive, ref, toRefs} from 'vue'
 // import AppHeader from '@/components/AppHeader.vue';
+  
 // import TheWelcome from '../components/TheWelcome.vue'
 import JobList from '@/components/JobList.vue';
 import Job from '@/types/Job';
